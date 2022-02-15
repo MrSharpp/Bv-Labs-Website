@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- Russo One FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container-c">
+        <div class="brand">
+          <a href="index.html">
+            <img src="./favicon.svg" alt="Vite App Logo" />
+          </a>
+        </div>
+        <!-- <div class="brand">Brand</div> -->
+
+        <ul id="navUl">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="navToggleButton">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div id="hero"></div>
+    <section
+      class="flex h-full -mt-2 w-full relative items-center justify-center hero lg:h-screen"
+    >
+      <div class="container-c my-40 text-white px-14 sm:px-28 md:my-80 lg:my-0">
+        <h2 class="font-extralight mb-4 text-6xl">I'M LUCY DOE</h2>
+        <p class="font-light text-2xl">Web Developer</p>
+      </div>
+
+      <div class="bottom-0 absolute">
+        <svg
+          class="fill-white w-screen"
+          x="0px"
+          y="0px"
+          viewBox="0 186.5 1920 113.5"
+        >
+          <polygon
+            points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 "
+          ></polygon>
+        </svg>
+      </div>
+    </section>
+
+    <!-- section one - About US -->
+    <div id="about"></div>
+    <section id="about" class="flex mt-24 justify-center">
+      <div
+        class="container-c flex flex-col px-8 items-center justify-between sm:flex-row"
+      >
+        <div class="mb-9 w-full px-4 md:mb-0 md:w-4/12">
+          <img class="rounded shadow" src="./assets/abt.jpg" alt="" />
+        </div>
+
+        <div class="w-full py-4 md:w-7/12">
+          <h1 class="heading">About Us</h1>
+
+          <p class="text-sm leading-loose text-[#333]">
+            For instance, whenever I go back to the guest house during the
+            morning to copy out the contract, these gentlemen are always still
+            sitting there eating their breakfasts. I ought to just try that
+            witht my boss; I'd get kicked out on the spot.
+          </p>
+          <br />
+          <p class="text-sm leading-loose text-[#333]">
+            But who knows, maybe that would be the best thing for me. He'd fall
+            right off his desk! And it's a funny sort of business to be sitting
+            up there at your desk, talking down at your subordinates. I ought to
+            just try that witht my boss; I'd get kicked out on the spot. But who
+            knows, maybe that would be the best thing for me. He'd fall right
+            off his desk! And it's a funny sort of business to be sitting up
+            there at your desk, talking down at your subordinates.
+          </p>
+
+          <div class="flex mt-8 items-center">
+            <span class="font-semibold mr-4">Share:</span>
+
+            <div class="flex items-center">
+              <a class="mx-0.5 p-1 inline-block" href="#">
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  class="h-4 w-4"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  />
+                </svg>
+              </a>
+
+              <a class="mx-0.5 p-1 inline-block" href="#">
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+              </a>
+
+              <a class="mx-0.5 p-1 inline-block" href="#">
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2 -- projects -->
+    <section class="flex mt-24 justify-center">
+      <div
+        class="container-c flex flex-col px-8 items-center justify-between md:flex-row"
+      >
+        <div
+          class="flex w-full p-4 transition-all duration-150 lg:w-1/3 hover:bg-gray-100"
+        >
+          <div class="mr-4 project-img">
+            <img class="w-14" src="./assets/3159310.png" alt="" />
+          </div>
+
+          <div style="min-width: min-content; max-width: 100%; width: 100%">
+            <h3 class="font-semibold mb-2 text-[#202020]">Web Design</h3>
+            <p class="text-sm text-[#333] leading-6">
+              I ought to just try that with my boss; I'd get kicked out on the
+              spot. But who knows, maybe that would be the best
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full p-4 transition-all duration-150 lg:w-1/3 hover:bg-gray-100"
+        >
+          <div class="mr-4 project-img">
+            <img class="w-14" src="./assets/3159310.png" alt="" />
+          </div>
+
+          <div style="min-width: min-content; max-width: 100%; width: 100%">
+            <h3 class="font-semibold mb-2 text-[#202020]">Illustrator</h3>
+            <p class="text-sm text-[#333] leading-6">
+              I ought to just try that with my boss; I'd get kicked out on the
+              spot. But who knows, maybe that would be the best
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full p-4 transition-all duration-150 lg:w-1/3 hover:bg-gray-100"
+        >
+          <div class="mr-4 project-img">
+            <img class="w-14" src="./assets/3159310.png" alt="" />
+          </div>
+
+          <div style="min-width: min-content; max-width: 100%; width: 100%">
+            <h3 class="font-semibold mb-2 text-[#202020]">Branding Identity</h3>
+            <p class="text-sm text-[#333] leading-6">
+              I ought to just try that with my boss; I'd get kicked out on the
+              spot. But who knows, maybe that would be the best
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -- Gallery -->
+    <div id="portfolio"></div>
+    <section class="flex mt-24 justify-center">
+      <div class="container-c px-8">
+        <h2 class="heading">Our Portfolio</h2>
+
+        <div>
+          <div class="mb-8 py-2">
+            <span id="all" class="active gallery-toggle"> All </span>
+            <span id="web" class="gallery-toggle"> Web Design </span>
+            <span id="graphic" class="gallery-toggle"> Graphic Design </span>
+            <span id="marketing" class="gallery-toggle"> Marketing </span>
+          </div>
+
+          <div
+            class="grid gap-4 grid-cols-1 gallery sm:grid-cols-2 md:grid-cols-3"
+          >
+            <img
+              id="web"
+              src="https://via.placeholder.com/500?text=web"
+              alt=""
+            />
+            <img
+              id="graphic"
+              src="https://via.placeholder.com/500?text=graphic"
+              alt=""
+            />
+            <img
+              id="web"
+              src="https://via.placeholder.com/500?text=web"
+              alt=""
+            />
+            <img
+              id="marketing"
+              src="https://via.placeholder.com/500?text=marketing"
+              alt=""
+            />
+            <img
+              id="graphic"
+              src="https://via.placeholder.com/500?text=graphic"
+              alt=""
+            />
+            <img
+              id="web"
+              src="https://via.placeholder.com/500?text=web"
+              alt=""
+            />
+            <img
+              id="marketing"
+              src="https://via.placeholder.com/500?text=marketing"
+              alt=""
+            />
+            <img
+              id="web"
+              src="https://via.placeholder.com/500?text=web"
+              alt=""
+            />
+            <img
+              id="graphic"
+              src="https://via.placeholder.com/500?text=graphic"
+              alt=""
+            />
+            <img
+              id="web"
+              src="https://via.placeholder.com/500?text=web"
+              alt=""
+            />
+            <img
+              id="marketing"
+              src="https://via.placeholder.com/500?text=marketing"
+              alt=""
+            />
+            <img
+              id="graphic"
+              src="https://via.placeholder.com/500?text=graphic"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 -- Get In Touch -->
+    <div id="contact"></div>
+    <section class="flex mt-24 justify-center">
+      <div class="container-c px-8">
+        <h2 class="heading">Get In Touch</h2>
+
+        <div class="flex flex-col md:flex-row md:items-center">
+          <div class="p-2 md:w-5/12">
+            <p class="mb-4">
+              100 Main St, Blacktown NSW 2148
+              <span class="block">Australia</span>
+            </p>
+
+            <p class="mb-4">
+              <a href="mailto:support@bold.com">support@bold.com</a>,
+              <a href="mailto:info@youremail.com">info@youremail.com</a>
+            </p>
+
+            <p class="mb-4">
+              <a href="tel:+256-4516-556">+256-4516-556</a>
+              <a href="tel:+257 56812749">+(257) 56812749</a>
+            </p>
+          </div>
+
+          <form class="flex flex-col md:w-7/12">
+            <div class="flex flex-col sm:flex-row">
+              <input
+                placeholder="Name Here*"
+                class="border-b border-[#ddd] my-2 mx-3 text-sm w-full py-1.5 sm:w-1/2"
+                type="text"
+              />
+              <input
+                placeholder="Email Here*"
+                class="border-b border-[#ddd] my-2 mx-3 text-sm w-full py-1.5 sm:w-1/2"
+                type="text"
+              />
+            </div>
+
+            <textarea
+              class="border-b border-[#ddd] my-2 mx-3 text-sm w-full py-1.5"
+              name="message"
+              placeholder="Message Here*"
+              id=""
+              rows="5"
+            ></textarea>
+
+            <div class="flex mt-3 items-center justify-end">
+              <button
+                type="submit"
+                class="flex bg-[#202020] text-sm text-white py-3 px-6 items-center"
+              >
+                <span class="mr-4">SEND MESSAGE</span>
+                <span>
+                  <svg
+                    class="h-3 fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="flex bg-[#f9f9f9] mt-20 justify-center">
+      <div class="container-c flex py-4 px-8 items-center justify-between">
+        <div class="brand">
+          <a href="index.html">
+            <img src="./favicon.svg" alt="Vite App Logo" />
+          </a>
+        </div>
+
+        <div class="text-sm">
+          <span class="text-[#333]">@Copyright By</span>
+          <span>XXXXX</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
